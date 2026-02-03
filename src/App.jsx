@@ -3,10 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login/Login.jsx";
 import Chat from "./pages/Chat/Chat.jsx";
 import ProfileUpdate from "./pages/ProfileUpdate/ProfileUpdate.jsx";
+import { ToastContainer, toast } from "react-toastify";
 
 const App = () => {
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Login></Login>}></Route>
         <Route path="/chat" element={<Chat></Chat>}></Route>
